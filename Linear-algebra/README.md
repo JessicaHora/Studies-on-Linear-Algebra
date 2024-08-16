@@ -60,12 +60,11 @@ O numpy.random subpacote fornece uma binomial()função que gera amostras com ba
 
 Resultado:
 
- Primeiro criamos o cash_balancearray de tamanho 500 com valores zero e atualizamos o primeiro valor com 500. Então, geramos valores entre 0 e 9 usando a binomial()função. Depois disso, atualizamos o cash_balancearray com base nos resultados de lançamentos de moedas e plotamos o saldo de caixa usando a biblioteca Matplotlib.
-
-Em cada execução, o código gerará resultados diferentes ou caminhadas aleatórias. Se você quiser tornar a caminhada constante, precisará usar o valor da seed na binomial()função. Vamos tentar outra forma de distribuição para o gerador de números aleatórios: distribuição normal.
-
 ![image](https://github.com/JessicaHora/Studies-on-Linear-Algebra/blob/main/img/binimial.png)
 
+Primeiro criamos o cash_balancearray de tamanho 500 com valores zero e atualizamos o primeiro valor com 500. Então, geramos valores entre 0 e 9 usando a binomial()função. Depois disso, atualizamos o cash_balancearray com base nos resultados de lançamentos de moedas e plotamos o saldo de caixa usando a biblioteca Matplotlib.
+
+Em cada execução, o código gerará resultados diferentes ou caminhadas aleatórias. Se você quiser tornar a caminhada constante, precisará usar o valor da seed na binomial()função. Vamos tentar outra forma de distribuição para o gerador de números aleatórios: distribuição normal.
 
 ## Distribuição normal
 Distribuições normais ocorrem frequentemente em cenários da vida real. Uma distribuição normal também é conhecida como curva de sino devido ao seu formato característico. A função de densidade de probabilidade modela a distribuição contínua. O numpy.randomsubpacote oferece muitas distribuições contínuas, como beta, gama, logística, exponencial, normal multivariada e distribuição normal. As normal()funções encontram amostras de distribuição gaussiana ou normal.
