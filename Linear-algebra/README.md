@@ -49,6 +49,7 @@ Números aleatórios oferecem uma variedade de aplicações, como simulação de
 ## Distribuição binomial
 
 A distribuição binomial modela o número de tentativas repetidas com a mesma probabilidade em cada tentativa. Aqui, cada tentativa é independente e tem dois resultados possíveis — sucesso e fracasso — que podem ocorrer em cada cliente. A fórmula a seguir representa a distribuição binomial:
+
 $$
 P(X) = \frac{n!}{(n - X)! \cdot X!} \cdot (p)^X \cdot (q)^{n-X}
 $$
@@ -63,13 +64,13 @@ Resultado:
 
 Em cada execução, o código gerará resultados diferentes ou caminhadas aleatórias. Se você quiser tornar a caminhada constante, precisará usar o valor da seed na binomial()função. Vamos tentar outra forma de distribuição para o gerador de números aleatórios: distribuição normal.
 
-[imagem]
+![image](https://github.com/JessicaHora/Studies-on-Linear-Algebra/blob/main/img/binimial.png)
 
 
 ## Distribuição normal
 Distribuições normais ocorrem frequentemente em cenários da vida real. Uma distribuição normal também é conhecida como curva de sino devido ao seu formato característico. A função de densidade de probabilidade modela a distribuição contínua. O numpy.randomsubpacote oferece muitas distribuições contínuas, como beta, gama, logística, exponencial, normal multivariada e distribuição normal. As normal()funções encontram amostras de distribuição gaussiana ou normal.
 Resultado:
-[imagem]
+![imagem](https://github.com/JessicaHora/Studies-on-Linear-Algebra/blob/main/img/normaldistribuicao.png)
 
 Aqui, geramos valores aleatórios usando a normal()função do numpy.random e exibimos os valores usando um histograma e gráfico de linhas ou curva de sino ou função de densidade de probabilidade teórica ( PDF ) com média 0 e desvio padrão de 1.
 
@@ -78,17 +79,20 @@ Aqui, geramos valores aleatórios usando a normal()função do numpy.random e ex
 Uma distribuição normal é comumente usada em larga escala em operações científicas e estatísticas. Conforme o teorema do limite central, conforme o tamanho da amostra aumenta, a distribuição da amostra se aproxima de uma distribuição normal. A distribuição normal é bem conhecida e fácil de usar. Na maioria dos casos, é recomendado confirmar a normalidade dos dados, especialmente em métodos paramétricos, assumindo que os dados são distribuídos gaussianamente. Existem muitos testes de normalidade na literatura, como o teste de Shapiro-Wilk, o teste de Anderson-Darling e o teste de D'Agostino-Pearson. O **scipy.stats**  oferece a maioria dos testes de normalidade.
  - No notebook foi  usado três amostras de dados aleatórios de tamanho pequeno, médio e grande para gerar as amostras de dados para todas as três amostras usando a função **normal()**
 
-# Técnicas para verificar a normalidade dos dados:
+## Técnicas para verificar a normalidade dos dados:
 
 1. Usando um histograma: Um histograma é o método mais fácil e rápido para verificar a normalidade dos dados. Ele divide os dados em compartimentos e conta a observação em cada compartimento. Finalmente, ele visualiza os dados. Foi usado  **distplot()** da seaborn biblioteca para plotar o histograma e a estimativa da densidade do kernel.
+ Resultando na seguinte saida:
 
-Resultando na seguinte saida:
- ![imagem]
+ ![imagem](https://github.com/JessicaHora/Studies-on-Linear-Algebra/blob/main/img/histograma1.png)
 
- - exemplo do histograma para uma amostra média, como segue:
-  ![imagem]
+ - exemplo do histograma para uma amostra média:
+ 
+    ![imagem](https://github.com/JessicaHora/Studies-on-Linear-Algebra/blob/main/img/histogra2.png)
 
   - exemplo do histograma para uma amostra grande:
+
+     ![imagem](https://github.com/JessicaHora/Studies-on-Linear-Algebra/blob/main/img/histo3.png)
   
 
   Nos três gráficos anteriores, podemos observar que, à medida que o tamanho da amostra aumenta, a curva se torna uma curva normal. Histogramas podem ser uma boa ferramenta para testar a normalidade dos dados.
@@ -108,5 +112,7 @@ No codigo no notebook foi usado a imagem facial como a fonte da imagem original 
 - aplicamos a operação de log na imagem do rosto original e na imagem do rosto mascarada. 
 - Finalmente, exibimos todas as imagens em subplots 2*2. 
   
-  
-O foco foi apenas na operação de log do array mascarado. 
+  ![imagem](https://github.com/JessicaHora/Studies-on-Linear-Algebra/blob/main/img/log.png)
+
+
+    O foco foi apenas na operação de log do array mascarado.
