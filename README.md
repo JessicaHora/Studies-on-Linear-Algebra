@@ -19,3 +19,6 @@ Também podemos executar essas operações em Python usando os pacotes NumPy e S
 - [Testando a normalidade dos dados usando SciPy](https://github.com/JessicaHora/Studies-on-Linear-Algebra/tree/main/Linear-algebra#testando-a-normalidade-dos-dados-usando-scipy)
 - [Criando uma matriz mascarada usando o numpy.ma](https://github.com/JessicaHora/Studies-on-Linear-Algebra/tree/main/Linear-algebra#criando-uma--masked-array-usando-o-numpyma)
 
+### [Ver Notebook](https://github.com/JessicaHora/Studies-on-Linear-Algebra/blob/main/Linear-algebra/Notebook/linear-algebra.ipynb)
+
+
