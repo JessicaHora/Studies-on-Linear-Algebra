@@ -10,7 +10,7 @@ O determinante é o conceito mais essencial da álgebra linear. É um valor esca
 ## Encontrando a classificação de uma matriz
 Rank é um conceito muito importante quando se trata de resolver equações lineares. O rank de uma matriz representa a quantidade de informação que é mantida na matriz. Um rank mais baixo significa menos informação, e um rank mais alto significa uma grande quantidade de informação. **Rank pode ser definido como o número de linhas ou colunas independentes de uma matriz**. O **numpy.linalg** subpacote fornece a **matrix_rank()** função. A **matrix_rank()** função pega a matriz como entrada e retorna o rank computado da matriz.
 
-No código a **matrix_rank()** função de **numpy.linalg** é usada para gerar o posto da matriz.
+No código a **matrix_rank()** função de **numpy.linalg** é usada para gerar o posto da matriz.[Veja no notebook](https://github.com/JessicaHora/Studies-on-Linear-Algebra/blob/main/Linear-algebra/Notebook/linear-algebra.ipynb)
 
 ## Matriz inversa usando NumPy:
 Uma matriz é uma sequência retangular de números, expressões e símbolos organizados em linhas e colunas. A multiplicação de uma matriz quadrada e sua inversa é igual à matriz identidade I. Podemos escrevê-la usando a seguinte equação:
@@ -21,7 +21,7 @@ O **numpy.linalg** subpacote fornece uma função para uma operação inversa: a
 
 ## Resolvendo equações lineares usando NumPy
 
-Operações de matriz podem transformar um vetor em outro vetor. Essas operações nos ajudarão a encontrar a solução para equações lineares. NumPy fornece a **solve()** função para resolver equações lineares na forma de **Ax=B**. Aqui, **A é a matriz n*n**, **B é uma matriz unidimensional** e **x é o vetor unidimensional desconhecido**. Também usaremos a **dot()** função para calcular o produto escalar de duas matrizes de números de ponto flutuante.
+Operações de matriz podem transformar um vetor em outro vetor. Essas operações nos ajudarão a encontrar a solução para equações lineares. NumPy fornece a **solve()** função para resolver equações lineares na forma de **Ax=B**. Aqui, **A é a matriz n*n**, **B é uma matriz unidimensional** e **x é o vetor unidimensional desconhecido**. Também usaremos a **dot()** função para calcular o produto escalar de duas matrizes de números de ponto flutuante.[Veja no notebook](https://github.com/JessicaHora/Studies-on-Linear-Algebra/blob/main/Linear-algebra/Notebook/linear-algebra.ipynb)
 
 ## Decompondo uma matriz usando SVD
 
@@ -40,11 +40,11 @@ Autovetores e autovalores são as ferramentas necessárias para entender o mapea
 
 Autovetores e autovalores são os fundamentos centrais da álgebra linear. Autovetores e autovalores são usados ​​em SVD, agrupamento espectral e PCA.
 
-calculamos os autovalores usando a **eigvals()** função do **numpy.linalg**. Após executar a decomposição de autovalores, veremos como gerar números aleatórios e uma matriz.
+calculamos os autovalores usando a **eigvals()** função do **numpy.linalg**. Após executar a decomposição de autovalores, veremos como gerar números aleatórios e uma matriz.[Veja no notebook](https://github.com/JessicaHora/Studies-on-Linear-Algebra/blob/main/Linear-algebra/Notebook/linear-algebra.ipynb)
 
 ## Gerando números aleatórios
 Números aleatórios oferecem uma variedade de aplicações, como simulação de Monte Carlo, criptografia, inicialização de senhas e processos estocásticos. Não é fácil gerar números aleatórios reais, então, na realidade, a maioria das aplicações usa números pseudoaleatórios. Números pseudo são adequados para a maioria dos propósitos, exceto em alguns casos raros. Números aleatórios podem ser gerados a partir de dados discretos e contínuos. A **numpy.random()**função gerará uma matriz de números aleatórios para o tamanho de entrada fornecido da matriz.
-- No Notebook foi gerado uma matriz aleatória 3*3 usando a numpy.random.random().
+- No Notebook foi gerado uma matriz aleatória 3*3 usando a numpy.random.random(). [Veja no notebook](https://github.com/JessicaHora/Studies-on-Linear-Algebra/blob/main/Linear-algebra/Notebook/linear-algebra.ipynb)
   
 ## Distribuição binomial
 
@@ -64,7 +64,7 @@ Resultado:
 
 Primeiro criamos o cash_balancearray de tamanho 500 com valores zero e atualizamos o primeiro valor com 500. Então, geramos valores entre 0 e 9 usando a binomial()função. Depois disso, atualizamos o cash_balancearray com base nos resultados de lançamentos de moedas e plotamos o saldo de caixa usando a biblioteca Matplotlib.
 
-Em cada execução, o código gerará resultados diferentes ou caminhadas aleatórias. Se você quiser tornar a caminhada constante, precisará usar o valor da seed na binomial()função. Vamos tentar outra forma de distribuição para o gerador de números aleatórios: distribuição normal.
+Em cada execução, o código gerará resultados diferentes ou caminhadas aleatórias. Se você quiser tornar a caminhada constante, precisará usar o valor da seed na binomial()função. Vamos tentar outra forma de distribuição para o gerador de números aleatórios: distribuição normal. [Veja no notebook](https://github.com/JessicaHora/Studies-on-Linear-Algebra/blob/main/Linear-algebra/Notebook/linear-algebra.ipynb)
 
 ## Distribuição normal
 Distribuições normais ocorrem frequentemente em cenários da vida real. Uma distribuição normal também é conhecida como curva de sino devido ao seu formato característico. A função de densidade de probabilidade modela a distribuição contínua. O numpy.randomsubpacote oferece muitas distribuições contínuas, como beta, gama, logística, exponencial, normal multivariada e distribuição normal. As normal()funções encontram amostras de distribuição gaussiana ou normal.
